@@ -219,82 +219,155 @@
             <section class="section">
               <div class="card-body">
                 <div class="card p-4">
-                  <div class="col-md-5 col-sm-12">
-                    <div class="card shadow p-4">
-                      <div class="card-content">
-                        <p>Information Course</p>
-                        <span>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Similique doloremque doloribus eaque quaerat ea
-                          sint distinctio facilis ex aliquam illum
-                          necessitatibus perspiciatis, ipsum eius? Eaque.
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="d-flex gap-3">
-                    <div class="card shadow">
-                      <div class="card-content">
-                        <div
-                          class="embed-responsive embed-responsive-item embed-responsive-16by9 w-100"
-                        >
-                          <iframe
-                            src="https://www.youtube.com/embed/2b9txcAt4e0"
-                            style="width: 100%"
-                            height="500"
-                            allowfullscreen
-                            class="rounded-top"
-                          ></iframe>
-                        </div>
-                        <div class="card-body">
-                          <h4 class="card-title mb-2 mt-3">
-                            Computer programming Course
-                          </h4>
-                          <p class="card-text">
-                            Candy cupcake sugar plum oat cake wafer marzipan
-                            jujubes. Jelly-o sesame snaps cheesecake topping.
-                            Cupcake fruitcake macaroon donut pastry gummies
-                            tiramisu chocolate bar muffin.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-5 col-sm-12">
-                      <div class="card shadow">
-                        <div class="card-content">
-                          <a href="">
-                            <img
-                              class="card-img-top img-fluid"
-                              src="../assets/images/samples/origami.jpg"
-                              alt="Card image cap"
-                              style="height: 20rem"
-                            />
-                          </a>
-                          <div class="card-body">
-                            <a href="">
-                              <h4 class="card-title">PDF Card</h4>
-                            </a>
-                            <p class="card-text">
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <a
+                        class="nav-link active"
+                        id="materi-tab"
+                        data-bs-toggle="tab"
+                        href="#materi"
+                        role="tab"
+                        aria-controls="materi"
+                        aria-selected="true"
+                        >Materi</a
+                      >
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a
+                        class="nav-link"
+                        id="quiz-tab"
+                        data-bs-toggle="tab"
+                        href="#quiz"
+                        role="tab"
+                        aria-controls="quiz"
+                        aria-selected="false"
+                        >Quiz</a
+                      >
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="materi"
+                      role="tabpanel"
+                      aria-labelledby="materi-tab"
+                    >
+                      <div class="col-md-5 col-sm-12 my-4">
+                        <div class="card shadow p-4">
+                          <div class="card-content">
+                            <p>Information Course</p>
+                            <span>
                               Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Neque fugiat numquam quaerat veritatis
-                              repellendus unde, animi fugit, doloremque
-                              voluptates voluptatum dolorem reprehenderit ad
-                              rerum sapiente hic dicta in culpa reiciendis
-                              deleniti cumque. Libero nemo hic rem sint a,
-                              debitis totam. Cum consequatur inventore adipisci
-                              alias magni expedita. Voluptas magni nostrum
-                              repellendus dolorem nulla, libero excepturi soluta
-                              aut illo iure ullam ipsum tempore animi laudantium
-                              cumque reprehenderit! Praesentium non nihil
-                              nesciunt a sint aut nulla molestiae officiis, quia
-                              aliquid aliquam minus autem ullam molestias
-                              necessitatibus pariatur rerum nostrum error
-                              placeat. Aspernatur iusto eaque hic ipsum porro
-                              praesentium architecto non tenetur neque.
-                            </p>
+                              elit. Similique doloremque doloribus eaque quaerat
+                              ea sint distinctio facilis ex aliquam illum
+                              necessitatibus perspiciatis, ipsum eius? Eaque.
+                            </span>
                           </div>
                         </div>
+                      </div>
+
+                      <div class="d-flex gap-3">
+                        <div class="card shadow">
+                          <div class="card-content">
+                            <div
+                              class="embed-responsive embed-responsive-item embed-responsive-16by9 w-100"
+                            >
+                              <iframe
+                                src="https://www.youtube.com/embed/2b9txcAt4e0"
+                                style="width: 100%"
+                                height="500"
+                                allowfullscreen
+                                class="rounded-top"
+                              ></iframe>
+                            </div>
+                            <div class="card-body">
+                              <h4 class="card-title mb-2 mt-3">
+                                Computer programming Course
+                              </h4>
+                              <p class="card-text">
+                                Candy cupcake sugar plum oat cake wafer marzipan
+                                jujubes. Jelly-o sesame snaps cheesecake
+                                topping. Cupcake fruitcake macaroon donut pastry
+                                gummies tiramisu chocolate bar muffin.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-5 col-sm-12">
+                          <div class="card shadow">
+                            <div class="card-content">
+                              <a href="">
+                                <img
+                                  class="card-img-top img-fluid"
+                                  src="../assets/images/samples/origami.jpg"
+                                  alt="Card image cap"
+                                  style="height: 20rem"
+                                />
+                              </a>
+                              <div class="card-body">
+                                <a href="">
+                                  <h4 class="card-title">PDF Card</h4>
+                                </a>
+                                <p class="card-text">
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Neque fugiat numquam quaerat
+                                  veritatis repellendus unde, animi fugit,
+                                  doloremque voluptates voluptatum dolorem
+                                  reprehenderit ad rerum sapiente hic dicta in
+                                  culpa reiciendis deleniti cumque. Libero nemo
+                                  hic rem sint a, debitis totam. Cum consequatur
+                                  inventore adipisci alias magni expedita.
+                                  Voluptas magni nostrum repellendus dolorem
+                                  nulla, libero excepturi soluta aut illo iure
+                                  ullam ipsum tempore animi laudantium cumque
+                                  reprehenderit! Praesentium non nihil nesciunt
+                                  a sint aut nulla molestiae officiis, quia
+                                  aliquid aliquam minus autem ullam molestias
+                                  necessitatibus pariatur rerum nostrum error
+                                  placeat. Aspernatur iusto eaque hic ipsum
+                                  porro praesentium architecto non tenetur
+                                  neque.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="quiz"
+                      role="tabpanel"
+                      aria-labelledby="quiz-tab"
+                    >
+                      <div class="card shadow p-4 col-md-4 col-sm-12 mt-4">
+                        <div class="header-title mb-1">
+                          <h2>Quiz</h2>
+                        </div>
+                        <h3 id="question" class="text-center">
+                          Quistion goes here
+                        </h3>
+                        <div id="answer-buttons" class="row gap-3 p-3">
+                          <button class="btn btn-outline-secondary shadow-sm">
+                            Answer 1
+                          </button>
+                          <button class="btn btn-outline-secondary shadow-sm">
+                            Answer 2
+                          </button>
+                          <button class="btn btn-outline-secondary shadow-sm">
+                            Answer 3
+                          </button>
+                          <button class="btn btn-outline-secondary shadow-sm">
+                            Answer 4
+                          </button>
+                        </div>
+                        <button
+                          class="btn btn-primary col-md-4 col-sm-12"
+                          style="display: none"
+                          id="next-btn"
+                        >
+                          Next
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -322,7 +395,158 @@
         </div>
       </div>
     </div>
+    <script>
+      // JavaScript code to disable the "Materi" link when on the "Quiz" tab
+      const materiTab = document.getElementById("materi-tab");
+      const quizTab = document.getElementById("quiz-tab");
+
+      // Function to disable the "Materi" link
+      function disableMateriLink() {
+        materiTab.removeAttribute("href");
+        materiTab.style.pointerEvents = "none";
+      }
+
+      // Function to enable the "Materi" link
+      function enableMateriLink() {
+        materiTab.setAttribute("href", "#materi");
+        materiTab.style.pointerEvents = "auto";
+      }
+
+      // Event listener to disable the link when on the "Quiz" tab
+      quizTab.addEventListener("click", () => {
+        disableMateriLink();
+      });
+
+      // Event listener to enable the link when on the "Materi" tab
+      materiTab.addEventListener("click", () => {
+        enableMateriLink();
+      });
+    </script>
     <script src="../assets/js/bootstrap.js"></script>
     <script src="../assets/js/app.js"></script>
+    <script>
+      const questions = [
+        {
+          questions: "Wich is largest animal in the world?",
+          answer: [
+            { text: "Shark", correct: false },
+            { text: "Blue Whale", correct: true },
+            { text: "Elephant", correct: false },
+            { text: "Giraffe", correct: false },
+          ],
+        },
+        {
+          questions: "Wich is largest animal in the world?",
+          answer: [
+            { text: "Shark", correct: false },
+            { text: "Blue Whale", correct: true },
+            { text: "Elephant", correct: false },
+            { text: "Giraffe", correct: false },
+          ],
+        },
+        {
+          questions: "Wich is largest animal in the world?",
+          answer: [
+            { text: "Shark", correct: false },
+            { text: "Blue Whale", correct: true },
+            { text: "Elephant", correct: false },
+            { text: "Giraffe", correct: false },
+          ],
+        },
+        {
+          questions: "Wich is largest animal in the world?",
+          answer: [
+            { text: "Shark", correct: false },
+            { text: "Blue Whale", correct: true },
+            { text: "Elephant", correct: false },
+            { text: "Giraffe", correct: false },
+          ],
+        },
+        {
+          questions: "Wich is largest animal in the world?",
+          answer: [
+            { text: "Shark", correct: false },
+            { text: "Blue Whale", correct: true },
+            { text: "Elephant", correct: false },
+            { text: "Giraffe", correct: false },
+          ],
+        },
+        {
+          questions: "Wich is largest animal in the world?",
+          answer: [
+            { text: "Shark", correct: false },
+            { text: "Blue Whale", correct: true },
+            { text: "Elephant", correct: false },
+            { text: "Giraffe", correct: false },
+          ],
+        },
+        {
+          questions: "Wich is largest animal in the world?",
+          answer: [
+            { text: "Shark", correct: false },
+            { text: "Blue Whale", correct: true },
+            { text: "Elephant", correct: false },
+            { text: "Giraffe", correct: false },
+          ],
+        },
+        {
+          questions: "Wich is largest animal in the world?",
+          answer: [
+            { text: "Shark", correct: false },
+            { text: "Blue Whale", correct: true },
+            { text: "Elephant", correct: false },
+            { text: "Giraffe", correct: false },
+          ],
+        },
+        {
+          questions: "Wich is largest animal in the world?",
+          answer: [
+            { text: "Shark", correct: false },
+            { text: "Blue Whale", correct: true },
+            { text: "Elephant", correct: false },
+            { text: "Giraffe", correct: false },
+          ],
+        },
+        {
+          questions: "Wich is largest animal in the world?",
+          answer: [
+            { text: "Shark", correct: false },
+            { text: "Blue Whale", correct: true },
+            { text: "Elephant", correct: false },
+            { text: "Giraffe", correct: false },
+          ],
+        },
+      ];
+
+      const questionsElement = document.getElementById("question");
+      const answerButton = document.getElementById("answer-buttons");
+      const nextButton = document.getElementById("next-btn");
+
+      let currentQuestionIndex = 0;
+      let score = 0;
+
+      function startQuiz() {
+        currentQuestionIndex = 0;
+        score = 0;
+        nextButton.innerHTML = "Next";
+        showQuestion();
+      }
+
+      function showQuestion() {
+        let currentQuestion = questions[currentQuestionIndex];
+        let questionNo = currentQuestionIndex + 1;
+        questionsElement.innerHTML =
+          questionNo + "." + currentQuestion.question;
+
+        currentQuestion.answers.forEach((answer) => {
+          const button = document.createElement("button");
+          button.innerHTML = answer.text;
+          button.classList.add("btn");
+          answerButton.appendChild(button);
+        });
+      }
+
+      startQuiz();
+    </script>
   </body>
 </html>

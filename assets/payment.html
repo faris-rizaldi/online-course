@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Paid Courses</title>
+    <title>Payment</title>
 
     <link rel="stylesheet" href="../assets/css/main/app.css" />
     <link rel="stylesheet" href="../assets/css/main/app-dark.css" />
@@ -17,6 +17,17 @@
       href="../assets/images/logo/favicon.png"
       type="image/png"
     />
+
+    <link rel="stylesheet" href="../assets/extensions/filepond/filepond.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/extensions/filepond-plugin-image-preview/filepond-plugin-image-preview.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/extensions/toastify-js/src/toastify.css"
+    />
+    <link rel="stylesheet" href="../assets/css/pages/filepond.css" />
   </head>
 
   <body>
@@ -115,7 +126,7 @@
                   <span>My Courses</span>
                 </a>
               </li>
-              <li class="sidebar-item active">
+              <li class="sidebar-item">
                 <a href="#" class="sidebar-link">
                   <i class="bi bi-stack"></i>
                   <span>List of paid courses</span>
@@ -181,7 +192,7 @@
             <div class="page-title">
               <div class="row">
                 <div class="col-12 col-md-6 order-md-1 order-last mb-3">
-                  <h3>List of Available Paid Courses</h3>
+                  <h3></h3>
                 </div>
                 <div class="col-12 col-md-6 order-md-2 order-first">
                   <nav
@@ -190,10 +201,10 @@
                   >
                     <ol class="breadcrumb">
                       <li class="breadcrumb-item">
-                        <a href="index.html">Dashboard</a>
+                        <a href="index.html">Courses</a>
                       </li>
                       <li class="breadcrumb-item active" aria-current="page">
-                        Courses
+                        Payment
                       </li>
                     </ol>
                   </nav>
@@ -204,119 +215,40 @@
               <div class="card-body">
                 <div class="card p-4 py-0">
                   <div class="card-header">
-                    <h4 class="card-title text-center">
-                      Available Paid Courses
-                    </h4>
+                    <h4 class="card-title">Payment Details</h4>
                   </div>
-                  <div class="row">
-                    <div class="col-md-4 col-sm-12">
-                      <div class="card shadow">
-                        <div class="card-content">
-                          <a href="">
-                            <img
-                              class="card-img-top img-fluid"
-                              src="../assets/images/samples/origami.jpg"
-                              alt="Card image cap"
-                              style="height: 20rem"
-                            />
-                          </a>
+                  <div class="">
+                    <ul>
+                      <li>
+                        <p>Nama : Muhammad Rifky Al-Faruq</p>
+                      </li>
+                      <li>
+                        <p>Nim : 200230123</p>
+                      </li>
+                      <li><p>Enroll Key : 2131272</p></li>
+                      <li>cost : Rp. 450.000</li>
+                      <li>
+                        <div class="card-content col-md-2 col-sm-12">
                           <div class="card-body">
-                            <a href="">
-                              <h4 class="card-title">Computer programming</h4>
-                            </a>
-                            <p class="card-text">
-                              Lorem ipsum dolor, sit amet consectetur
-                              adipisicing elit. Tenetur voluptatum iste
-                              deleniti! Error, quae minus?
-                            </p>
-                            <p class="card-text">Rp. 450.000</p>
-                            <div
-                              class="d-flex gap-lg-5 justify-content-between"
-                            >
-                              <div>
-                                <a
-                                  href="detail-course.html"
-                                  class="btn btn-primary block"
-                                  >Buy now</a
-                                >
-                              </div>
-                              <div class="avatar avatar-lg gap-3">
-                                <img
-                                  src="../assets/images/faces/2.jpg"
-                                  alt=""
-                                  srcset=""
-                                />
-
-                                <a href=""
-                                  ><p class="mt-2">Rifky al-faruq</p></a
-                                >
-                              </div>
+                            <div class="header-title">
+                              Silahkan Bayar ke nomor: 32324324242
                             </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12">
-                      <div class="card shadow">
-                        <div class="card-content">
-                          <a href="#">
-                            <img
-                              class="card-img-top img-fluid"
-                              src="../assets/images/samples/origami.jpg"
-                              alt="Card image cap"
-                              style="height: 20rem"
-                            />
-                          </a>
-                          <div class="card-body">
-                            <a href="#">
-                              <h4 class="card-title">Aircraft Performance</h4>
-                            </a>
                             <p class="card-text">
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Facilis quos molestias, necessitatibus
-                              doloremque.
+                              Upload bukti transfer disini
                             </p>
-                            <p class="card-text">Rp. 250.000</p>
-                            <a
-                              href="detail-course.html"
-                              class="btn btn-primary block"
-                              >Buy now</a
-                            >
+                            <!-- Basic file uploader -->
+                            <input type="file" class="basic-filepond" />
                           </div>
                         </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12">
-                      <div class="card shadow">
-                        <div class="card-content">
-                          <a href="">
-                            <img
-                              class="card-img-top img-fluid"
-                              src="../assets/images/samples/origami.jpg"
-                              alt="Card image cap"
-                              style="height: 20rem"
-                            />
-                          </a>
-                          <div class="card-body">
-                            <a href="">
-                              <h4 class="card-title">
-                                ATS Data Processing System
-                              </h4>
-                            </a>
-                            <p class="card-text">
-                              Lorem ipsum dolor, sit amet consectetur
-                              adipisicing elit. Laboriosam incidunt qui totam
-                              recusandae maxime tempora.
-                            </p>
-                            <p class="card-text">Rp. 350.000</p>
-                            <a
-                              href="detail-course.html"
-                              class="btn btn-primary block"
-                              >Buy now</a
-                            >
-                          </div>
-                        </div>
-                      </div>
+                      </li>
+                    </ul>
+                    <div class="col-1 col-md-1">
+                      <button
+                        type="submit"
+                        class="btn btn-outline-primary btn-block btn- mb-4"
+                      >
+                        Upload
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -345,5 +277,9 @@
     </div>
     <script src="../assets/js/bootstrap.js"></script>
     <script src="../assets/js/app.js"></script>
+
+    <script src="../assets/extensions/filepond/filepond.js"></script>
+    <script src="../assets/extensions/toastify-js/src/toastify.js"></script>
+    <script src="../assets/js/pages/filepond.js"></script>
   </body>
 </html>

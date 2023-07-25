@@ -10,7 +10,7 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../assets/css/main/home.css" />
 
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
   </head>
@@ -18,15 +18,16 @@
     <nav>
       <div class="container nav__container">
         <a href="index.html"
-          ><img class="nav__logo" src="images/logo_poltekbang.webp" alt=""
+          ><img
+            class="nav__logo"
+            src="../assets/images/logo/logo_poltekbang.webp"
+            alt=""
         /></a>
         <ul class="nav__menu">
           <li>
             <h4><a href="index.html">Home</a></h4>
           </li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="courses.html">Courses</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Courses</a></li>
           <li><a class="nav__login" href="./assets/login.html">Login</a></li>
         </ul>
         <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
@@ -48,7 +49,7 @@
 
         <div class="header__right">
           <div class="header__right-image">
-            <img src="./images/header.svg" />
+            <img src="../assets/images/logo/hero-img.png" />
           </div>
         </div>
       </div>
@@ -60,7 +61,7 @@
       <div class="container courses__container">
         <article class="course">
           <div class="course__image">
-            <img src="./images/course1.jpg" alt="" />
+            <img src="../assets/images/samples/origami.jpg" alt="" />
           </div>
           <div class="course__info">
             <h4>Responsive Web</h4>
@@ -75,7 +76,7 @@
 
         <article class="course">
           <div class="course__image">
-            <img src="./images/course2.jpg" alt="" />
+            <img src="../assets/images/samples/origami.jpg" alt="" />
           </div>
           <div class="course__info">
             <h4>Responsive Web</h4>
@@ -90,7 +91,7 @@
 
         <article class="course">
           <div class="course__image">
-            <img src="./images/course6.jpg" alt="" />
+            <img src="../assets/images/samples/origami.jpg" alt="" />
           </div>
           <div class="course__info">
             <h4>Responsive Web</h4>
@@ -147,6 +148,12 @@
       </div>
     </footer>
 
-    <script src="main.js"></script>
+    <script>
+      window.addEventListener("scroll", () => {
+        document
+          .querySelector("nav")
+          .classList.toggle("window-scroll", window.scrollY > 0);
+      });
+    </script>
   </body>
 </html>
