@@ -214,38 +214,39 @@
             <section class="section">
               <div class="card-body">
                 <div class="card p-4 py-0">
-                  <div class="card-header">
+                  <div class="m-3">
                     <h4 class="card-title">Payment Details</h4>
                   </div>
-                  <div class="">
-                    <ul>
-                      <li>
-                        <p>Nama : Muhammad Rifky Al-Faruq</p>
-                      </li>
-                      <li>
-                        <p>Nim : 200230123</p>
-                      </li>
-                      <li><p>Enroll Key : 2131272</p></li>
-                      <li>cost : Rp. 450.000</li>
-                      <li>
-                        <div class="card-content col-md-4 col-sm-12">
-                          <div class="card-body">
-                            <div class="header-title">
-                              Silahkan Bayar ke nomor: 32324324242
-                            </div>
-                            <p class="card-text">
-                              Upload bukti transfer disini
-                            </p>
-                            <!-- Basic file uploader -->
-                            <input type="file" class="basic-filepond" />
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                    <div class="col-md-2 col-sm-12 mt-0">
+                  <div class="card shadow p-4">
+                    <div class="row">
+                      <div class="col-1">
+                        <p>Nama</p>
+                        <p>Nim</p>
+                        <p>Cost</p>
+                      </div>
+                      <div class="col-4">
+                        <p>: Muhammad Rifky Al-Faruq</p>
+                        <p>: 20210229239</p>
+                        <p>: Rp.450.000</p>
+                      </div>
+                    </div>
+
+                    <div class="card-content col-md-4 col-sm-12">
+                      <div class="mb-2">Silahkan Bayar ke nomor berikut</div>
+
+                      <p class="m-2 text-info">
+                        89218803988 A/n Muhammad Rifky Al-faruq
+                      </p>
+
+                      <p class="card-text">Upload bukti transfer</p>
+                      <!-- Basic file uploader -->
+                      <input type="file" class="basic-filepond" />
+                    </div>
+
+                    <div class="col-md-2 col-sm-12 mt-3">
                       <button
                         type="submit"
-                        class="btn btn-outline-primary btn-block btn- mb-4"
+                        class="btn btn-outline-primary btn-block"
                       >
                         Upload
                       </button>
